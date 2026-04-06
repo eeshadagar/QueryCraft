@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://querycraft-backend.onrender.com";
 
 const AGENT_META = {
   schema_linking: { label: "Schema Linking", icon: "🔗", color: "#6EE7B7" },
