@@ -287,4 +287,5 @@ def health():
     return jsonify({"status": "ok", "databases": list(db_store.keys())})
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
